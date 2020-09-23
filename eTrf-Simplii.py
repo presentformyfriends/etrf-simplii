@@ -87,4 +87,4 @@ def eTrf(cardNmbr, pword, amt):
 ##    browser.quit()
     
 
-eTrf('cardNmbr', 'pword', 'amt') # Substitute your own values here, do not include '$' in dollarAmount
+eTrf('cardNmbr', 'pword', 'amt') # Substitute your own values here, do not include '$' in amt
