@@ -1,5 +1,5 @@
 # eTrf-Simplii
-Python script to send Interac eTransfers programmatically via Simplii's website
+Python script to send Interac eTransfers programmatically via Simplii's website.
 
 ## :credit_card: Usage
 
