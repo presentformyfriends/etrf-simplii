@@ -11,4 +11,6 @@ Customize the required arguments to pass to eTrf function (line 117), then run t
 
 ## :snake: Dependencies
 
-This script uses selenium webdriver, as well as the following Python modules:  os, pyautogui, sys, datetime
+Must have Firefox browser installed.
+
+This script uses selenium (geckodriver), as well as the following Python modules:  os, pyautogui, sys, datetime.
