@@ -35,13 +35,9 @@ def eTrf(cardNmbr, pword, amt):
     eTrfLink = driver.find_element_by_link_text("Interac e-Transfers")
     eTrfLink.click()
 
-    # Wait to load
+    # Wait for page to load
     sendMoneyWait = EC.presence_of_element_located((By.LINK_TEXT, "Send Money"))
     WebDriverWait(driver, 10).until(sendMoneyWait)
-
-    # Inputs amt variable in the "Amount:" field
-    amount = driver.find_element_by_name("amount")
-    amount.send_keys(amt)
 
     # Mitigate for ad popup
     try:
@@ -49,6 +45,10 @@ def eTrf(cardNmbr, pword, amt):
         adCloseBtn.click()
     except:
         NoSuchElementException
+
+    # Inputs amt variable in the "Amount:" field
+    amount = driver.find_element_by_name("amount")
+    amount.send_keys(amt)
 
     # Change "Kelly Kapoor" to whatever option you want for payee in the "Send Money To:" dropdown menu
     # Change "No Fee Chequing Account" to whatever account you want in the "Account:" dropdown menu
@@ -104,7 +104,7 @@ def eTrf(cardNmbr, pword, amt):
         pyautogui.screenshot('C:\\Users\\PATH\\'+todayDateTime+'_.png') # Customize PATH
 
         # Alert dialog box to close
-        pyautogui.alert('All done! Press OK to close the driver')
+        pyautogui.alert('Screenshot saved! Press OK to close the driver')
 
         # Close driver and exit
         driver.close()
