@@ -1,4 +1,4 @@
-# eTrf-Simplii
+# etrf-simplii
 Python script to send Interac eTransfers programmatically via Simplii's website, and saves a screenshot of the confirmation to the user's hard drive.
 
 ## :credit_card: Usage
