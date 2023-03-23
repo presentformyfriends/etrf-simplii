@@ -1,16 +1,40 @@
+<div align="center">
+
 # etrf-simplii
+![Linux](https://img.shields.io/badge/linux-mint%2020.3-hotpink?logo=linux&logoColor=pink) ![Mac](https://img.shields.io/badge/mac-osx%2010.15-hotpink?logo=apple&logoColor=pink) ![Windows](https://img.shields.io/badge/windows-10-hotpink?logo=windows&logoColor=pink)
+
+![GitHub Last Commit](https://img.shields.io/github/last-commit/presentformyfriends/etrf-simplii?color=hotpink&logo=git&logoColor=pink) ![Python](https://img.shields.io/pypi/pyversions/selenium?color=hotpink&logo=python&logoColor=pink) [![Code style: black](https://img.shields.io/badge/style-black-000000.svg)](https://github.com/psf/black)
+
+</div>
+
+## Overview
 Python script to send Interac eTransfers programmatically via Simplii's website, and saves a screenshot of the confirmation to the user's hard drive.
+<br><br>
 
 ## :credit_card: Usage
+You must have a Simplii account to use this script. I may write versions for other financial institutions in the future.
 
-You must have a Simplii account for this to work. I may write versions for other bank websites in the future.
-
-Make sure to customize the desired file path to save the screenshot (line 104).
-
-Customize the required arguments to pass to eTrf function (line 117), then run the script.
+Also, make sure to customize the environment variables, amount, and account type.
+<br><br>
 
 ## :snake: Dependencies
 
-Must have Firefox browser installed.
+### Packages
+* [Selenium](https://pypi.org/project/selenium/)
 
-This script uses selenium (geckodriver), as well as the following Python modules:  os, pyautogui, sys, datetime.
+### Frameworks
+* [undetected_chromedriver](https://github.com/ultrafunkamsterdam/undetected-chromedriver)
+
+### Modules
+* [datetime](https://docs.python.org/3/library/datetime.html)
+* [decimal](https://docs.python.org/3/library/decimal.html)
+* [os](https://docs.python.org/3/library/os.html#module-os)
+* [pathlib](https://docs.python.org/3/library/pathlib.html)
+* [pyautogui](https://github.com/asweigart/pyautogui)
+* [sys](https://docs.python.org/3/library/sys.html)
+* [time](https://docs.python.org/3/library/time.html)
+<br><br>
+
+## ⚖️ License
+
+[![GitHub License](https://img.shields.io/github/license/presentformyfriends/etrf-simplii?color=hotpink)](https://github.com/presentformyfriends/etrf-simplii/blob/main/LICENSE)
